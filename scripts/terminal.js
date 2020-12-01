@@ -2,7 +2,7 @@
 const o = $('#term_outputTA');     // HANDLER OF OUTPUT TEXTAREA
 const i = $('#term_inputTA');      // HANDLER OF INPUT TEXTAREA
 const t = $('#term_terminal');     // HANDLER OF TERMINAL (CONATINER)
-const maxRows = 12;                // MAX NUMBER OF DISPLAYED ROWS
+const maxRows = 15;                // MAX NUMBER OF DISPLAYED ROWS
 const keyCode = 13;
 const commandPrompt = ">> ";
 var welcomeText =  new Array(  // this text is typewrited on page load
@@ -37,7 +37,8 @@ function adjustFontSize() {
     // the height of row strictly depends on font size and since output window 
     // is always 'maxRows' high - font size needs to be adjusted to height of output,
     // so the output window always contained exactly 'maxRows' rows
-    var newFontSize = Math.floor(t.height() * 0.9 / ((maxRows+1)*1.2));
+    // alert(t.css('line-height'));    
+    var newFontSize = Math.floor(t.height() * 0.9 / (maxRows+1));
     t.css('font-size', newFontSize);
 }
 

@@ -25,6 +25,7 @@
 	min-width: 200px;
 	font-size: 16.79px;
 	font-family: 'Inconsolata', monospace; /* ### TODO find better font ### */ 
+	line-height: 1;
 }
 #term_topBar {
 	width: 100%;
