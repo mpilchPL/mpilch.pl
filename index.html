@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/terminal.css">
 
     <!--### SYNTAX HUGHLIGHTER FILES ###-->
     <link type="text/css" rel="stylesheet" href="highlighter/style/sh_style.css">
@@ -20,45 +21,75 @@
 <body>
     <header>
         <div class="container-fluid backImg">
-            <div class="row mx-sm-3">
+            <div class="row mx-sm-2">
                 <div class="col-lg-6 p-0">
-                    <div id="headerImg" class="headerTile ratio-golden bg-test">
-                        <img class="img-fluid" src="img/laptop.jpg" alt="">
+                    <div id="headerImg" class="mr-lg-2 headerTile ratio-golden">
+                        <!-- <img class="img-fluid" src="img/laptop.jpg" alt=""> -->
+                        <div id="name">Michał Pilch</div>
+                        <div id="notname">henlo</div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 p-0">
-                    <div id="about" class="headerTile ratio-golden">
-                        <div id="welcomeTextNav" class="d-flex">
-                            <div>function</div>
-                            <div> yolo</div>
-                        </div>
-                        <div id="welcomeText" class="bg-test2">
-                            <!-- <p>function findJob() {</p>
-                            <p>&emsp;if (potentialEmployer.getVacancies > 0) {</p>
-                            <p>&emsp;&emsp;sendRequest();</p>
-                            <p>&emsp;}</p>
-                            <p>}</p> -->
-                            <textarea id="terminal" class="" spellcheck="false" cols="30" rows="1"></textarea>                           
+                    <div id="about" class="ml-lg-2 headerTile ratio-golden">
+                        <div id="term_terminal" class="center-horizontal center-vertical theTerminal">
+                            <div id="term_topBar">
+                                <div class="term_dropdown term_buttonHover">
+                                    <div id="term_fileButton" class="term_menuItem">File</div>
+                                    <div id="term_fileMenu" class="term_dropdownMenu term_hidden">
+                                        <div id="clearBTN" class="term_dropdownMenu_item">Clear</div>
+                                    </div>
+                                </div>
+                                <div class="term_dropdown term_buttonHover">
+                                    <div id="term_optionsButton" class="term_menuItem">Options</div>
+                                    <div id="term_optionsMenu" class="term_dropdownMenu term_hidden">
+                                        <div class="term_dropdownMenu_item">Link 1</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="term_dropdown term_buttonHover">
+                                    <div id="term_helpButton" class="term_menuItem">Help</div>
+                                    <div id="term_helpMenu" class="term_dropdownMenu term_hidden">
+                                        <div class="term_dropdownMenu_item">Link 1</div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="term_buttonsLeftBorder"></div>
+                                <div id="term_max" class="term_button">&#x2750;</div>
+                                <div id="term_exit" class="term_button">&#x2716;</div>
+                            </div>
+                            <div id="term_output">
+                                <textarea name="term_outputTA" id="term_outputTA" readonly cols="30" rows="13" spellcheck="false" autocomplete="off"></textarea>
+                            </div>
+                            <div id="term_input">
+                                <textarea name="term_inputTA" id="term_inputTA" cols="" rows="1" spellcheck="false" autocomplete="off"></textarea>
+                            </div>
+                
+                            <div class="term_androidArrows term_arrowTop term_hidden">&uarr;</div>
+                            <div class="term_androidArrows term_arrowBottom term_hidden">&darr;</div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-12 p-0">
-                    <div class="headerTile bg-test clone-height" data-target="#about" exclude="a">
-                        bb
-                    </div>  
                 </div>
             </div>
+
+            
         </div>
     </header>
 
     <main>
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="panel bg-test2 clone-height" data-target="#about" exclude="a">
+                    bb
+                </div>  
+            </div>
+        </div>
         <!-- #TODO do uzupelnieniia-->
     </main>
 
     <footer>
-        <div class="container-fluid bg-test">
+        <div class="container-fluid bg-test2">
             <div class="row">
                 <div class="col-12">
                     a
@@ -73,7 +104,13 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script src="scripts/utils/utilities.js"></script>
-
     <script src="scripts/test.js"></script>
+
+    <!--### terminal files ###-->
+    <script src="scripts/terminal.js"></script>
+    <script src="scripts/typewriter.js"></script>
+    <script src="scripts/commandHandler.js"></script>
+    <script src="scripts/jquery.scrollTo.min.js"></script>
+
 </body>
 </html>

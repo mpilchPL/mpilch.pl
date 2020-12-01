@@ -1,0 +1,163 @@
+
+/* #region ########################  COLOURS ########################### */
+#term_terminal 				{ background-color: #000000c4;   			/* ### terminal BG ### */
+				 			  border: 3px ridge rgb(146, 146, 146); }	/* ### terminal border ### */
+#term_topBar				{ background-color: rgb(146, 146, 146);		/* ### top bar bg ### */
+					   border-bottom: 3px ridge rgb(146, 146, 146); }	/* ### top bar bottom border ### */
+#term_inputTA, 
+#term_outputTA					 { caret-color: rgb(255, 255, 255);		/* ### caret colour ### */
+										 color: rgb(255, 255, 255); }	/* ### input font colour ### */
+.term_androidArrows 			{		 color: rgb(255, 255, 255); }	/* ### sliding arrows (on mobile devices) ### */
+#term_exit:hover			{ background-color: rgba(255, 0, 0, 0.76); }/* ### exit button hover ### */
+#term_max:hover 			{ background-color: rgba(58, 58, 58, 0.67);}/* ### maximize / minimize button hover ### */
+.term_buttonHover:hover 	 {background-color: rgba(58, 58, 58, 0.67);}/* ### menu button hover ### */
+.term_dropdownMenu 			{ background-color: rgb(146, 146, 146); }	/* ### dropdown menu colour ### */
+.term_dropdownMenu_item 				{color: black; }				/* ### dropdown menu font colour ### */
+.term_dropdownMenu_item:hover {background-color:rgba(58, 58, 58, 0.67);}/* ### dropdown menu item hover ### */
+
+/* #endregion */
+
+
+#term_terminal {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 200px;
+	font-size: 16.79px;
+	font-family: 'Inconsolata', monospace; /* ### TODO find better font ### */ 
+}
+#term_topBar {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	font-family: 'Inconsolata', monospace;
+}
+
+#term_output {
+	width: auto;
+	height: auto;
+	max-height: 80%;
+	padding-left: 6px;
+}
+
+#term_input {
+	width: auto;
+	height: auto;
+	padding-left: 6px;
+	
+}
+#term_outputTA,
+#term_inputTA {
+	width: 100%;
+	height: auto;
+	padding: 0;
+	outline: none;
+	border: none;
+	resize: none;
+	background-color: #00000000;
+	overflow: hidden;
+	font-size: 1em;
+}
+#term_outputTA:hover,
+#term_inputTA:hover {
+	outline: none;
+}
+
+.term_androidArrows {
+	position: absolute;
+	z-index: 10;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 15%;
+	text-align: center;
+	opacity: 0.8;
+	transition: opacity 0.15s ease;
+	right: 0;
+	width: 5%;
+	height: 20%;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.term_arrowTop {
+	top: 30%;
+}
+.term_arrowBottom {
+	bottom: 30%;
+}
+
+.term_hidden {
+	display: none;
+}
+
+.term_button {
+	position: relative;
+	height: 100%;
+	width: auto;
+	padding: 0 2% 0 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+.term_menuItem {
+	position: relative;
+	height: 100%;
+	width: auto;
+	padding: 0 1vw 0 1vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+
+
+.term_buttonsLeftBorder {
+	margin-left: auto;
+}
+
+
+
+.term_dropdownMenu {
+	position: absolute;
+	height: auto;
+	top: 100%;
+	min-width: 160px;
+	z-index: 1;
+	
+}
+
+.term_dropdownMenu_item {
+	padding: 4px;
+	text-decoration: none;
+	display: block;
+	height: auto;
+}
+
+.term_dropdownMenu_item:hover {
+	user-select: none; /* Standard */
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+}
+.term_dropdown {
+	display: inline;
+	position: relative;
+	width: auto;
+	height: auto;
+}
