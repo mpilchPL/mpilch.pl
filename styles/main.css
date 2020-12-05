@@ -35,12 +35,12 @@ body {
 }
 
 .backImg {
-    background-image: url('../img/lapcoff.jpg');
+    background-image: url('../img/bg2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-origin: content-box;
+    /* background-position: center; */
 }
-
  .panel {
     margin-top: 0vw;
     background-color: rgb(8, 8, 8)
