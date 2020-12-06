@@ -172,15 +172,23 @@ commands.push(goto = {
     name: 'goto',
     info: 'Scrolls website to the target',
     params: ['help'],
-    values: SCROLL_TARGETS,
     showInfo(terminal) {
         commandInfo(terminal, this.name, this.info, this.params, this.values);
     },
     execute(terminal, command, line, p) {
-        var target = line.substr(this.name.length+1);
-        if(SCROLL_TARGETS.includes(target.toLowerCase())) {
-            terminal.goto(target, 500);
-        }
+        
+    }
+});
+
+commands.push(gui = {
+    name: 'gui',
+    info: 'Hides terminal and displays gui menu',
+    params: ['help'],
+    showInfo(terminal) {
+        commandInfo(terminal, this.name, this.info, this.params);
+    },
+    execute(terminal, command, line, p) {
+        showGui();
     }
 });
 

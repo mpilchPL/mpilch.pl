@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/terminal.css">
 
+    <link rel="stylesheet" href="fontello-523febff/css/fontello.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     
@@ -21,36 +23,47 @@
 <body>
 
     <div class="container-fluid backImg">
-        <div class="row mx-sm-auto max-w-1200 ">
-            <div class="col-lg-6 p-0">
-                <div id="headerImg" class="mr-lg-2 headerTile ratio-golden">
-                    <!-- <img class="img-fluid" src="img/laptop.jpg" alt=""> -->
-                    <div id="name">Michał Pilch</div>
-                    <div id="notname">henlo</div>
+        <div class="row mx-sm-auto max-w-1200 topPanel">
+            <div class="col-lg-6 p-0 welcome">
+                <div id="welcomeHeader" class="mr-lg-2 headerTile">
+                    <div style="height: 100%; width: 100%; padding: 2vw;">
+                        <p class="fitFont" size="5">Hi, I'm</p>
+                        <h1>Michał Pilch</h1>
+                        <p style="text-align: center;">and I aspire to be</p>
+                        <p style="text-align: right;">Web Developer</p>
+                    </div>
+                    <div class="squares pos-bottomleft">
+                        <div class="insideSQ"></div>
+                        <div class="SQred"></div>
+                        <div class="SQblue"></div>
+                        <div class="SQgreen"></div>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-6 p-0">
-                <div id="about" class="ml-lg-2 headerTile ratio-golden">
-                    <div id="term_terminal" class="center-horizontal center-vertical">
+            <div class="col-lg-6 p-0 welcome">
+                <div id="about" class="ml-lg-2 headerTile">
+                    <!--#region #################### TERMINAL ####################### -->
+                    <div id="term_terminal" class="center-horizontal center-vertical d-none">
                         <div id="term_topBar">
                             <div class="term_dropdown term_buttonHover">
                                 <div id="term_fileButton" class="term_menuItem">File</div>
                                 <div id="term_fileMenu" class="term_dropdownMenu term_hidden">
                                     <div id="clearBTN" class="term_dropdownMenu_item">Clear</div>
+                                    <div id="guiBTN" class="term_dropdownMenu_item">GUI</div>
                                 </div>
                             </div>
                             <div class="term_dropdown term_buttonHover">
                                 <div id="term_optionsButton" class="term_menuItem">Options</div>
                                 <div id="term_optionsMenu" class="term_dropdownMenu term_hidden">
-                                    <div class="term_dropdownMenu_item">Link 1</div>
+                                    <div class="term_dropdownMenu_item">[In development ...]</div>
                                 </div>
                             </div>
                             
                             <div class="term_dropdown term_buttonHover">
                                 <div id="term_helpButton" class="term_menuItem">Help</div>
                                 <div id="term_helpMenu" class="term_dropdownMenu term_hidden">
-                                    <div class="term_dropdownMenu_item">Link 1</div>
+                                    <div class="term_dropdownMenu_item">How to use</div>
                                 </div>
                             </div>
                             
@@ -69,13 +82,40 @@
                         <div class="term_androidArrows term_arrowTop term_hidden">&uarr;</div>
                         <div class="term_androidArrows term_arrowBottom term_hidden">&darr;</div>
                     </div>
+                    <!--#endregion #####################################################-->
+                    
+                    <!--#region #################### GUI NAV ####################-->
+
+                    <div id="navPanel" class="d-flex flex-wrap">
+                        <div id="navButtonToTerminal" class="navTile">
+                            <i class="icon-mail navItem"></i>
+                        </div>
+                        <div class="navTile">
+                            <i class="icon-calendar navItem"></i>
+                        </div>
+                        <div class="navTile">
+                            <i class="icon-facebook-official navItem"></i>
+                        </div>
+                        <div class="navTile">
+                            <i class="icon-paw navItem"></i>
+                        </div>
+                        <div class="navTile">
+                            
+                        </div>
+                        <div class="navTile">
+                            
+                        </div>
+                        
+                    </div>
+
+                    <!--#endregion ############################################ -->
                 </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 p-0">
-                <div class="panel clone-height mt-4" data-target="#about" exclude="a">
+                <div class="panel clone-height mt-4" data-target="#about">
                     bb
                 </div>  
             </div>
@@ -108,6 +148,6 @@
     <script src="scripts/typewriter.js"></script>
     <script src="scripts/commandHandler.js"></script>
     <script src="scripts/jquery.scrollTo.min.js"></script>
-
+    <script src="scripts/generalBehaviour.js"></script>
 </body>
 </html>

@@ -20,9 +20,9 @@ function Terminal(output, input) {
 
 
 $(document).ready(function () {      // page onload
-    adjustFontSize();
     o.attr('rows', maxRows);
-    terminal.typewrite(welcomeText, 'fast'); 
+    adjustFontSize();
+    // terminal.typewrite(welcomeText, 'fast'); 
 });
 
 $(window).resize(function () {
@@ -89,6 +89,7 @@ Terminal.prototype.print = function(value) {  // prints value in terminal
     return this.output.html(this.output.val() + value);
 }
 
+
 Terminal.prototype.clear = function(value) {  //clears terminal content
     return this.output.html("");
 }
@@ -147,6 +148,11 @@ function hideAllDropdowns() {
      terminal.clear();
  });
 
+ $('#guiBTN').click(function (e) { 
+     e.preventDefault();
+     showGui();
+ });
+
 $(window).click(function (e) { 
      if(!e.target.closest(".term_dropdown")) {
         hideAllDropdowns();
@@ -165,12 +171,12 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         $('.term_androidArrows').removeClass('term_hidden');
     });
     
-    $('.arrowTop').click(function (e) { 
+    $('.term_arrowTop').click(function (e) { 
         e.preventDefault();
         terminal.scrollUp();
     });
     
-    $('.arrowBottom').click(function (e) { 
+    $('.term_arrowBottom').click(function (e) { 
         e.preventDefault();
         terminal.scrollDown();
     });

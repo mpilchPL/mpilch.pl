@@ -1,9 +1,14 @@
 body {
+    padding: 0;
+    margin: 0;
     background-color: #444444;
-    font-size: clamp(16px, 4vw, 22px); 
+
     color: black;
 }
-
+.vcenter {
+    display: flex;
+    align-items: center;
+}
 .bg-test {
     background-color: rgba(137, 43, 226, 0.61);
 }
@@ -15,23 +20,83 @@ body {
 .headerTile {
     margin-top: 2vw;
     box-shadow: 1vw 1vw 2vw black;
+    /* height: 50%; */
+    font-size: 5vmin;
 }
 
 #about {
-
+    height: 100%;
 }
-#headerImg {
-    background-color: rgba(216, 191, 216, 0.199);
-    font-size: 5vmin;
+#welcomeHeader {
+    position: relative;
+    background-color: rgba(20, 20, 20, 0.37);
+    
+    color: lavender;
+    height: 100%;
+}
+.welcome {
+    height: 45%;
+}
+#welcomeHeader p {
+    padding: 0;
+    margin: 0;
+} 
+#welcomeHeader h1 {
+    font-size: 2.5em;
 }   
 #name {
     font-size: 2em;
 }
-
-
-#headerImg img {
-    width: 100%;
+.squares {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+}
+.insideSQ {
+    position: relative;
     height: 100%;
+    width: 100%;
+}
+
+.SQred {
+    position: absolute;
+    width: 66%;
+    height: 66%;
+    background-color: rgba(255, 0, 0, 0.25);
+    left: 0;
+    top: 0;
+    z-index: 1;
+    margin-left: 0.5vw;
+}
+.SQblue {
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.25);
+    width: 66%;
+    height: 66%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+.SQgreen {
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.25);
+    width: 33%;
+    height: 33%;
+    left: 20%;
+    bottom: 20%;
+    z-index: 1;
+}
+
+.pos-topright {
+    right: 0;
+    top: 0;
+}
+
+.pos-bottomleft {
+    left: 0;
+    bottom: 0;
 }
 
 .backImg {
@@ -39,9 +104,54 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-origin: content-box;
-    /* background-position: center; */
+    
 }
- .panel {
-    margin-top: 0vw;
-    background-color: rgb(8, 8, 8)
+
+ .topPanel {
+    height: 100vh;
  }
+
+
+ #navPanel {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.37);
+    
+ }
+
+.navTile {
+    position: relative;
+    width: 33.33%;
+    height: 50%;   
+    /* border: 2px solid white; */
+    color: lavender;
+}
+
+.navTile:hover {
+    background-color: rgba(20, 20, 20, 0.219);
+    color: white;
+    cursor: pointer;
+}
+
+.navTile i {
+    font-size: 5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ .navItem {
+     text-align: center;
+ }
+
+/* #region SKILLS PANEL */
+.panel {
+   
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+/* #endregion */
+ 
