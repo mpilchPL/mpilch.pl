@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/terminal.css">
+    <link rel="stylesheet" href="img/icons/font/flaticon.css">
 
     <link rel="stylesheet" href="fontello-523febff/css/fontello.css">
 
@@ -44,7 +45,7 @@
             <div class="col-lg-6 p-0 ratio-golden">
                 <div id="navigation" class="ml-lg-2 headerTile">
                     <!--#region #################### TERMINAL ####################### -->
-                    <div id="term_terminal" class="center-horizontal center-vertical d-none">
+                    <div id="term_terminal" class="">
                         <div id="term_topBar">
                             <div class="term_dropdown term_buttonHover">
                                 <div id="term_fileButton" class="term_menuItem">File</div>
@@ -86,26 +87,57 @@
                     
                     <!--#region #################### GUI NAV ####################-->
 
-                    <div id="navPanel" class="d-flex flex-wrap">
+                    <div id="navPanel" class="flex-wrap d-none">
+                        <div class="navTile">
+                            <div class="iconHolder">
+                                <i class="flaticon-contact navItem"></i>
+                            </div>
+                            <div class="cap">
+                                <p>Contact</p>
+                            </div>
+                        </div>
+                        <div class="navTile">
+                            <div class="iconHolder">
+                                <i class="flaticon-pencil navItem"></i>
+                            </div>
+                            <div class="cap">
+                                <p>Skillset</p>
+                            </div>
+                        </div>
+                        <div class="navTile">
+                            <div class="iconHolder">
+                                <i class="flaticon-laptop navItem"></i>
+                            </div>
+                            <div class="cap">
+                                <p>Projects</p>
+                            </div>
+                        </div>
+                        <div class="navTile">
+                            <a href="https://github.com/mpilchPL" target="_blank">
+                                <div class="iconHolder">
+                                    <i class="flaticon-github navItem"></i>
+                                </div>
+                                <div class="cap">
+                                    <p>GitHub</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="navTile">
+                            <div class="iconHolder">
+                                <i class="flaticon-mission navItem"></i>
+                            </div>
+                            <div class="cap">
+                                <p>Goals</p>
+                            </div>
+                        </div>
                         <div id="navButtonToTerminal" class="navTile">
-                            <i class="icon-mail navItem"></i>
+                            <div class="iconHolder">
+                                <i class="flaticon-web-programming navItem"></i>
+                            </div>
+                            <div class="cap">
+                                <p>Terminal</p>
+                            </div>
                         </div>
-                        <div class="navTile">
-                            <i class="icon-calendar navItem"></i>
-                        </div>
-                        <div class="navTile">
-                            <i class="icon-facebook-official navItem"></i>
-                        </div>
-                        <div class="navTile">
-                            <i class="icon-paw navItem"></i>
-                        </div>
-                        <div class="navTile">
-                            
-                        </div>
-                        <div class="navTile">
-                            
-                        </div>
-                        
                     </div>
 
                     <!--#endregion ############################################ -->
@@ -128,25 +160,88 @@
                     Fusce eleifend lorem et est molestie egestas vitae sed augue.</p>
                 </div>  
             </div>
+
+
         </div>
 
-        <div class="row">
-            
-        </div>
+        
 
+    </div>
+    <div class="container-fluid midPanel">
+        <div class="row mx-auto max-w-1200">
+            <div class="col-12 projectsTitle">
+                <h1>Projects</h1>
+                <div class="separator w-25 mx-auto"></div>
+            </div>
+            <div class="col-lg-2 col-6 col-md-3 p-1">
+                <a href="https://mpilchpl.github.io/web-terminal/" target="_blank">
+                    <div class="projectTile ratio-1">
+                    <img class="img-fluid" src="img/term.png" alt="">
+                    <div class="projectCap">
+                        <p>Web Terminal</p>
+                    </div>
+                </div>
+                </a>
+                <div class="w-100 d-flex text-white projectInfo">
+                    <a class="githubLink" target="_blank" href="https://github.com/mpilchPL/web-terminal">
+                        <div class="w-25">
+                            <i class="flaticon-github"></i>
+                        </div>
+                    </a>
+                    <div class="projectTechnology">
+                        <!-- #TODO make it look gud -->
+                        <i class="flaticon-github"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-6 col-md-3 p-1">
+                <div class="projectTile ratio-1">
+                    <img class="img-fluid" src="img/wet.png" alt="">
+                    <div class="projectCap">
+                        <p>Przychodnia weterynaryjna</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-2 col-6 col-md-3 p-1">
+                <a href="https://mpilchpl.github.io/web-terminal/" target="_blank">
+                    <div class="projectTile ratio-1">
+                    <img class="img-fluid" src="img/comingsoon.png" alt="">
+                    <div class="projectCap">
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+                </a>
+                <div class="w-100 d-flex text-white projectInfo">
+                    <a class="githubLink" href="">
+                        <div class="w-25">
+                            <i class="flaticon-github"></i>
+                        </div>
+                    </a>
+                    <div class="projectTechnology">
+                        <!-- #TODO make it look gud -->
+                        <i class="flaticon-github"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
     <footer>
-        <div class="container-fluid bg-test2">
+        <div id="contact" class="container-fluid bg-test2">
             <div class="row">
                 <div class="col-12">
-                    a
+                    Kontakt itp
                 </div>
             </div>
         </div>
     </footer>
+    <div class="signature">
+        <p>&copy; Copyright Michał Pilch 2020 | <a href="licences/licenses.html" target="_blank">Licences</a></p>
+    </div>
     <!--### jQuery ###-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--### bootstrap files ###-->

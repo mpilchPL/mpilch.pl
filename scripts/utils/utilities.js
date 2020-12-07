@@ -49,6 +49,10 @@ $('.ratio-golden-r').each(function (index, self) {
 $('.clone-height').each(function (index, self) { 
    cloneHeight(self);
 });
+
+$('.ratio-1').each(function (index, self) { 
+   setRatioOneOne(self);
+});
 $(window).resize(function () { 
 
    $('.ratio-golden').each(function (index, self) { 
@@ -62,6 +66,9 @@ $(window).resize(function () {
    $('.clone-height').each(function (index, self) { 
    cloneHeight(self);
    });
+   $('.ratio-1').each(function (index, self) { 
+      setRatioOneOne(self);
+  });
 });
 
 
@@ -85,4 +92,8 @@ function cloneHeight(self) {
    var target = $(self).attr('data-target');
    var newHeight = $(target).height();
    $(self).height(newHeight);
+}
+
+function setRatioOneOne (self) {
+   $(self).height($(self).width());
 }

@@ -22,6 +22,16 @@ $(document).ready(function () {
 
 
 
+// $('.projectTile').hover(function () {
+//         // over
+//         $('.projectCap').stop();
+//         $('.projectCap').fadeIn();
+//     }, function () {
+//         // out
+//         $('.projectCap').stop();
+
+//     }
+// );
 
 $('#navButtonToTerminal').click(function (e) { 
     e.preventDefault();

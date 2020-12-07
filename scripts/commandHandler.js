@@ -172,6 +172,7 @@ commands.push(goto = {
     name: 'goto',
     info: 'Scrolls website to the target',
     params: ['help'],
+    values: SCROLL_TARGETS,
     showInfo(terminal) {
         commandInfo(terminal, this.name, this.info, this.params, this.values);
     },

@@ -5,8 +5,8 @@
 #term_topBar				{ background-color: rgb(146, 146, 146);		/* ### top bar bg ### */
 					   border-bottom: 3px ridge rgb(146, 146, 146); }	/* ### top bar bottom border ### */
 #term_inputTA, 
-#term_outputTA					 { caret-color: rgb(255, 255, 255);		/* ### caret colour ### */
-										 color: rgb(255, 255, 255); }	/* ### input font colour ### */
+#term_outputTA					 { caret-color: rgb(25, 255, 25);		/* ### caret colour ### */
+										 color: rgb(25, 255, 25); }	/* ### font colour ### */
 .term_androidArrows 			{		 color: rgb(255, 255, 255); }	/* ### sliding arrows (on mobile devices) ### */
 #term_exit:hover			{ background-color: rgba(255, 0, 0, 0.76); }/* ### exit button hover ### */
 #term_max:hover 			{ background-color: rgba(58, 58, 58, 0.67);}/* ### maximize / minimize button hover ### */

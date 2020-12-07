@@ -22,7 +22,7 @@ function Terminal(output, input) {
 $(document).ready(function () {      // page onload
     o.attr('rows', maxRows);
     adjustFontSize();
-    // terminal.typewrite(welcomeText, 'fast'); 
+    terminal.typewrite(welcomeText, 'fast'); 
 });
 
 $(window).resize(function () {

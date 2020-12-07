@@ -45,7 +45,7 @@ body {
     margin: 0;
 } 
 #welcomeHeader h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
 }   
 .squares {
     position: absolute;
@@ -123,17 +123,22 @@ body {
     position: relative;
     width: 33.33%;
     height: 50%;   
+    padding-bottom: 2vh;
     /* border: 2px solid white; */
     color: lavender;
 }
 
 .navTile:hover {
-    background-color: rgba(20, 20, 20, 0.219);
-    color: white;
+    background-color: rgba(20, 20, 20, 0);
+    color: rgb(25, 255, 25);
     cursor: pointer;
+    transition: color 0.4s;
 }
-
-.navTile i {
+.iconHolder {
+    height: 80%;
+    width: 100%;
+}
+.iconHolder i::before {
     font-size: 3em;
     margin: 0;
     position: absolute;
@@ -142,14 +147,37 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.navTile.cap {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    height: 20%;
+}
 
+.navTile a {
+    transform: none;
+    color: lavender;
+}
+.navTile a:hover {
+    transform: none;
+    background-color: rgba(20, 20, 20, 0.219);
+    color: rgb(25, 255, 25);
+    cursor: pointer;
+    transition: color 0.4s;
+    text-decoration: none;
+}
+.cap p {
+    text-align: center;
+    font-size: 0.7em;
+    padding-top: 1vh;
+    margin: 0;
+}
  .navItem {
      text-align: center;
  }
 
-/* #region SKILLS PANEL */
+/* #region ABOUT ME PANEL */
 #aboutMePanel {
-
     background-color: rgb(8, 8, 8);
     color: white;
 }
@@ -165,3 +193,112 @@ body {
 }
 /* #endregion */
  
+
+/* #region FOOTER / CONTACT */
+#contact {
+    height: 100%;
+}
+footer {
+    height: 20vh;
+    
+}
+.signature {
+    font-size: 10px;
+    text-align: center;
+    color: rgb(114, 114, 114);
+  }
+  .signature p{
+    margin: 0;
+  }
+  .signature a{
+    color: rgb(114, 114, 114);
+
+  }
+  .signature a:hover{
+    color: rgb(94, 94, 94);
+  }
+
+/* #endregion */
+
+.midPanel {
+    background-color: rgb(8, 8, 8);
+    padding: 5vh 0 5vh 0;
+}
+
+/* #region PROJECTS */
+.projectsTitle h1 {
+    color: white;
+    font-size: 5vmin;
+    text-align: center;
+}
+.projectTile {
+    background-color: rgb(172, 172, 172);
+    position: relative;
+    border: 2px solid #444444;
+}
+.projectTile img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.projectTile:hover .projectCap {
+    opacity: 100%;
+    transition: opacity 1.5s;
+}
+.projectTile:hover .githubLink {
+    opacity: 100%;
+    transition: opacity 1.5s;
+}
+
+
+.projectCap {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0000007e;
+    color: white;
+    text-align: center;
+    font-size: 4vmin;
+    padding-top: 30%;
+    z-index: 1;
+    /* top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+}
+
+
+.githubLink {
+    margin: 1vmin;
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.githubLink i::before {
+    margin: 1vmin;
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.githubLink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.projectInfo {
+    /* background-color: rgba(255, 255, 240, 0.185); */
+    
+    border-bottom: 1px solid rgb(25, 255, 25);
+}
+.projectTechnology {
+    margin: 1vmin;
+    color: white;
+}
+.projectTechnology i::before {
+    margin: 1vmin;
+}
+/* #endregion */
