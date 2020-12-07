@@ -25,7 +25,24 @@ $(document).ready(function () {
 
 $('#navButtonToTerminal').click(function (e) { 
     e.preventDefault();
+    showTerminal();
+});
 
+$('#term_exit').click(function (e) { 
+    showGui();
+});
+
+function showGui() { 
+    let term = $('#term_terminal');
+    let gui = $('#navPanel');
+
+    term.fadeOut( () => {
+        gui.fadeIn();
+        gui.addClass('d-flex');
+    });
+}
+
+function showTerminal () { 
     terminal.clear();
     terminal.typewrite(welcomeText, 'fast'); 
     $('#navPanel').fadeOut( () => {
@@ -36,15 +53,4 @@ $('#navButtonToTerminal').click(function (e) {
         });
         $('#term_terminal').removeClass('d-none');
     });
-});
-
-function showGui() { 
-    let term = $('#term_terminal');
-    let gui = $('#navPanel');
-
-
-    term.fadeOut( () => {
-        gui.fadeIn();
-        gui.addClass('d-flex');
-    });
-}
+ }
