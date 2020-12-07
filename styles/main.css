@@ -20,23 +20,19 @@ body {
 .headerTile {
     margin-top: 2vw;
     box-shadow: 1vw 1vw 2vw black;
-    /* height: 50%; */
     font-size: 5vmin;
 }
 
-#about {
+#navigation {
     height: 100%;
 }
 #welcomeHeader {
     position: relative;
     background-color: rgba(20, 20, 20, 0.37);
-    
     color: lavender;
     height: 100%;
 }
-.welcome {
-    height: 45%;
-}
+
 #welcomeHeader p {
     padding: 0;
     margin: 0;
@@ -44,9 +40,6 @@ body {
 #welcomeHeader h1 {
     font-size: 2.5em;
 }   
-#name {
-    font-size: 2em;
-}
 .squares {
     position: absolute;
     width: 30%;
@@ -107,9 +100,9 @@ body {
     
 }
 
- .topPanel {
+.topPanel {
     height: 100vh;
- }
+}
 
 
  #navPanel {
@@ -134,7 +127,7 @@ body {
 }
 
 .navTile i {
-    font-size: 5rem;
+    font-size: 3em;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -148,10 +141,15 @@ body {
  }
 
 /* #region SKILLS PANEL */
-.panel {
-   
+#aboutMePanel {
     background-color: rgb(8, 8, 8);
     color: white;
+}
+
+#aboutMePanel p {
+    text-align: justify;
+    margin: 0 10vw 0 10vw;
+    font-size: 1.5rem;
 }
 /* #endregion */
  

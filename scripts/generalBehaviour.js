@@ -1,9 +1,23 @@
-            /* #region ################# RESIZE ################# */
+/* #region ################# RESIZE ################# */
 $(window).resize(function () { 
-    
+    if(window.innerWidth < 992) {
+        $('.topPanel').css('height', 'auto');
+    } else {
+        $('.topPanel').css('height', '100vh');
+    }
 });
-            /* #endregion ########################################### */
+/* #endregion ########################################### */
 
+
+/* #region ################# ON LOAD ################# */
+$(document).ready(function () {
+    if(window.innerWidth < 992) {
+        $('.topPanel').css('height', 'auto');
+    } else {
+        $('.topPanel').css('height', '100vh');
+    }
+});
+/* #endregion ########################################### */
 
 
 
