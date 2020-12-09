@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #444444;
-
+    
     color: black;
 }
 .vcenter {
@@ -185,7 +185,8 @@ body {
 #aboutMePanel p {
     text-align: justify;
     margin: 0 10vw 0 10vw;
-    font-size: 3vmin;
+    /* font-size: 3vmin; */
+    font-size: 1rem;
 }
 #aboutMePanel h1 {
     text-align: center;
@@ -246,10 +247,6 @@ footer {
     opacity: 100%;
     transition: opacity 1.5s;
 }
-.projectTile:hover .githubLink {
-    opacity: 100%;
-    transition: opacity 1.5s;
-}
 
 
 .projectCap {
@@ -261,7 +258,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 4vmin;
-    padding-top: 30%;
+    /* padding-top: 30%; */
     z-index: 1;
     /* top: 50%;
     left: 50%;
@@ -269,6 +266,11 @@ footer {
     transform: translate(-50%, -50%); */
 }
 
+.centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .githubLink {
     margin: 1vmin;
@@ -289,11 +291,54 @@ footer {
     text-decoration: none;
 }
 
-.projectInfo {
-    /* background-color: rgba(255, 255, 240, 0.185); */
-    
-    border-bottom: 1px solid rgb(25, 255, 25);
+.rotateUp{
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
+.rotateDown{
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    }
+
+.projectInfoBtn {
+    height: 3vh;
+    border-bottom: 1px solid rgb(25, 255, 25);
+    border-radius: 10%;
+}
+.dirArrow {
+    font-size: 0.8em;
+}
+.projectInfo {
+    color: white;
+    font-size: 3vmin;
+}
+.statusReady {
+    color: green;
+}
+.statusDev {
+    color: red;
+}
+.projectInfo p {
+    margin-bottom: 0;
+}
+.projectInfoBtn:hover { 
+    cursor: pointer; 
+    border-color: rgb(25, 255, 25);
+    border-radius: 70%;
+    transition: border-color 0.5s, border-radius 1s;
+}
+.projectInfoBtn:hover .dirArrow {
+    color: rgb(25, 255, 25);
+    font-size: 1em;
+    transition: color 0.5s, font-size 0.5s;
+}
+
 .projectTechnology {
     margin: 1vmin;
     color: white;
@@ -301,4 +346,8 @@ footer {
 .projectTechnology i::before {
     margin: 1vmin;
 }
+/* #endregion */
+
+/* #region regionname */
+
 /* #endregion */

@@ -173,43 +173,60 @@
                 <h1>Projects</h1>
                 <div class="separator w-25 mx-auto"></div>
             </div>
+
+            <!--### ################## PROJECTS ################### ###-->
             <div class="col-lg-2 col-6 col-md-3 p-1">
                 <a href="https://mpilchpl.github.io/web-terminal/" target="_blank">
                     <div class="projectTile ratio-1">
-                    <img class="img-fluid" src="img/term.png" alt="">
-                    <div class="projectCap">
-                        <p>Web Terminal</p>
-                    </div>
-                </div>
-                </a>
-                <div class="w-100 d-flex text-white projectInfo">
-                    <a class="githubLink" target="_blank" href="https://github.com/mpilchPL/web-terminal">
-                        <div class="w-25">
-                            <i class="flaticon-github"></i>
+                        <img class="img-fluid" src="img/term.png" alt="">
+                        <div class="projectCap centerContent">
+                            <p>Web Terminal</p>
                         </div>
-                    </a>
-                    <div class="projectTechnology">
-                        <!-- #TODO make it look gud -->
-                        <i class="flaticon-github"></i>
+                    </div>
+                </a>
+                <div class="collapse projectInfo" id="terminalInfo">
+                    <div class="p-1">
+                        <p class="text-center">Web Terminal</p>
+                        <p class="text-left">
+                            Traditional terminal that can be palced on site. 
+                            
+                            
+                        </p>
+                        
+                        <p style="font-size: 0.6em;">Status: <span class="statusDev">Under Development</span></p>
+                        <p>
+                            <a class="githubLink" href="">
+                                <i class="flaticon-github" style="font-size: 0.7em;"> gitHub</i>
+                            </a>
+                        </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-2 col-6 col-md-3 p-1">
-                <div class="projectTile ratio-1">
-                    <img class="img-fluid" src="img/wet.png" alt="">
-                    <div class="projectCap">
-                        <p>Przychodnia weterynaryjna</p>
-                    </div>
+                <div class="w-100 text-white projectInfoBtn centerContent" data-toggle="collapse" data-target="#terminalInfo" aria-expanded="false" aria-controls="collapseprojectinfo">
+                    <!-- #TODO uzupelnic ten szajs, moze zrobic ten border zmniejszajacy,
+                    musi byc wewnatrz tego diva -->
                 </div>
                 
             </div>
 
+
+
             <div class="col-lg-2 col-6 col-md-3 p-1">
-                <a href="https://mpilchpl.github.io/web-terminal/" target="_blank">
+                <div class="projectTile ratio-1">
+                    <img class="img-fluid" src="img/wet.png" alt="">
+                    <div class="projectCap centerContent">
+                        <p>Przychodnia weterynaryjna</p>
+                    </div>
+                </div>
+                <div class="w-100 text-white projectInfo centerContent" data-toggle="collapse" data-target="#wetInfo" aria-expanded="false" aria-controls="collapseprojectinfo">
+                    <span class="dirArrow rotateDown">&#10148;</span>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-6 col-md-3 p-1">
+                <a href="" target="_blank">
                     <div class="projectTile ratio-1">
                     <img class="img-fluid" src="img/comingsoon.png" alt="">
-                    <div class="projectCap">
+                    <div class="projectCap centerContent">
                         <p>Coming Soon</p>
                     </div>
                 </div>
@@ -217,7 +234,7 @@
                 <div class="w-100 d-flex text-white projectInfo">
                     <a class="githubLink" href="">
                         <div class="w-25">
-                            <i class="flaticon-github"></i>
+                            <i class="flaticon-github"> gitHub</i>
                         </div>
                     </a>
                     <div class="projectTechnology">
