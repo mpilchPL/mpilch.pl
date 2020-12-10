@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-<!--### TODO about me, skills, projects, where do i see myself in future ###-->
-
-
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
@@ -163,9 +160,6 @@
 
 
         </div>
-
-        
-
     </div>
     <div class="container-fluid midPanel">
         <div class="row mx-auto max-w-1200">
@@ -174,7 +168,7 @@
                 <div class="separator w-25 mx-auto"></div>
             </div>
 
-            <!--### ################## PROJECTS ################### ###-->
+            <!-- #region ### ################## PROJECTS ################### ###-->
             <div class="col-lg-2 col-6 col-md-3 p-1">
                 <a href="https://mpilchpl.github.io/web-terminal/" target="_blank">
                     <div class="projectTile ratio-1">
@@ -189,10 +183,7 @@
                         <p class="text-center">Web Terminal</p>
                         <p class="text-left">
                             Traditional terminal that can be palced on site. 
-                            
-                            
                         </p>
-                        
                         <p style="font-size: 0.6em;">Status: <span class="statusDev">Under Development</span></p>
                         <p>
                             <a class="githubLink" href="">
@@ -208,53 +199,121 @@
                 
             </div>
 
-
-
             <div class="col-lg-2 col-6 col-md-3 p-1">
-                <div class="projectTile ratio-1">
-                    <img class="img-fluid" src="img/wet.png" alt="">
-                    <div class="projectCap centerContent">
-                        <p>Przychodnia weterynaryjna</p>
+                <a href="#">
+                    <div class="projectTile ratio-1">
+                        <img class="img-fluid" src="img/wet.png" alt="">
+                        <div class="projectCap centerContent">
+                            <p>Przychodnia weterynaryjna</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="collapse projectInfo" id="wetInfo">
+                    <div class="p-1">
+                        <p class="text-center">Vet Office</p>
+                        <p class="text-left">
+                            Simple info site about veterinary office 
+                        </p>
+                        <p style="font-size: 0.6em;">Status: <span class="statusReady">Finished</span></p>
+                        <p>
+                            <a class="githubLink" href="">
+                                <i class="flaticon-github" style="font-size: 0.7em;"> gitHub</i>
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="w-100 text-white projectInfo centerContent" data-toggle="collapse" data-target="#wetInfo" aria-expanded="false" aria-controls="collapseprojectinfo">
-                    <span class="dirArrow rotateDown">&#10148;</span>
-                </div>
+                <div class="w-100 text-white projectInfoBtn centerContent" data-toggle="collapse" data-target="#wetInfo" aria-expanded="false" aria-controls="collapseprojectinfo"></div>
             </div>
 
             <div class="col-lg-2 col-6 col-md-3 p-1">
-                <a href="" target="_blank">
+                <a href="#" target="_blank">
                     <div class="projectTile ratio-1">
-                    <img class="img-fluid" src="img/comingsoon.png" alt="">
-                    <div class="projectCap centerContent">
-                        <p>Coming Soon</p>
-                    </div>
-                </div>
-                </a>
-                <div class="w-100 d-flex text-white projectInfo">
-                    <a class="githubLink" href="">
-                        <div class="w-25">
-                            <i class="flaticon-github"> gitHub</i>
+                        <img class="img-fluid" src="img/comingsoon.png" alt="">
+                        <div class="projectCap centerContent">
+                            <p>Coming Soon</p>
                         </div>
-                    </a>
-                    <div class="projectTechnology">
-                        <!-- #TODO make it look gud -->
-                        <i class="flaticon-github"></i>
+                    </div>
+                </a>
+                <div class="collapse projectInfo" id="_info">
+                    <div class="p-1">
+                        <p class="text-center">TBD</p>
+                        <p class="text-left">
+                            .. 
+                        </p>
+                        <p style="font-size: 0.6em;">Status: <span class="statusDev">Under Development</span></p>
+                        <p>
+                            <a class="githubLink" href="">
+                                <i class="flaticon-github" style="font-size: 0.7em;"> gitHub</i>
+                            </a>
+                        </p>
                     </div>
                 </div>
+                <div class="w-100 text-white projectInfoBtn centerContent" data-toggle="collapse" data-target="#_info" aria-expanded="false" aria-controls="collapseprojectinfo"></div>
+            </div>
+
+            <!--#endregion ################ END OF PROJECTS ############################ -->
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid langs bg-test2">
+        <div class="row mx-auto mt-0 max-w-1200 text-white">
+            <div class="col-12 mt-4">
+                <h1>My Current Skills</h1>
+                <div class="separator w-25 mx-auto"></div>
             </div>
         </div>
+
+        <div class="row mx-auto mt-0 max-w-1200 text-white">
+            <div class="col-lg-2 col-4">
+                <div class="logoHolder lang-bg">
+                    <img src="img/logo_js_white.png" class="img-fluid" alt="">
+                    <i class="icon-html"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-4">
+                <div class="logoHolder lang-bg">
+                    <img src="img/logo_html_white.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-4">
+                <div class="logoHolder lang-bg">
+                    <img src="img/logo_css_white.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-4">
+                <div class="logoHolder lang-bg">
+                    <img src="img/logo_jquery_white.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row mx-auto mt-4 max-w-1200 text-white">
+            <div class="col-12 mt-4">
+                <h1>My Goals</h1>
+                <div class="separator w-25 mx-auto"></div>
+            </div>
+        </div>
+        
     </div>
 
 
     <footer>
         <div id="contact" class="container-fluid bg-test2">
-            <div class="row">
-                <div class="col-12">
-                    Kontakt itp
+            <div class="row text-white">
+                <div class="col-12 mt-4">
+                    <h1>Contact</h1>
+                    <div class="separator w-25 mx-auto"></div>
                 </div>
+                <div class="col-6 text-center">asdas</div>
+                <div class="col-6 text-center">asdas</div>
             </div>
-        </div>
+        </div>a
     </footer>
     <div class="signature">
         <p>&copy; Copyright Michał Pilch 2020 | <a href="licences/licenses.html" target="_blank">Licences</a></p>

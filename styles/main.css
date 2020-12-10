@@ -227,7 +227,7 @@ footer {
 }
 
 /* #region PROJECTS */
-.projectsTitle h1 {
+.col-12 h1 {
     color: white;
     font-size: 5vmin;
     text-align: center;
@@ -291,20 +291,6 @@ footer {
     text-decoration: none;
 }
 
-.rotateUp{
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-.rotateDown{
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    }
 
 .projectInfoBtn {
     height: 3vh;
@@ -339,15 +325,28 @@ footer {
     transition: color 0.5s, font-size 0.5s;
 }
 
-.projectTechnology {
-    margin: 1vmin;
-    color: white;
-}
-.projectTechnology i::before {
-    margin: 1vmin;
-}
 /* #endregion */
 
-/* #region regionname */
+/* #region SKILLS */
+
+.langs {
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+}
+.lang-bg {
+    background-color:rgba(25, 255, 25, 0);
+    border-radius: 4%;
+}
+.topLogos {
+    width: 50%;
+}
+.logoHolder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
 
 /* #endregion */
