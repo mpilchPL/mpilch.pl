@@ -19,19 +19,10 @@ $(document).ready(function () {
 });
 /* #endregion ########################################### */
 
-
-
-
-// $('.projectTile').hover(function () {
-//         // over
-//         $('.projectCap').stop();
-//         $('.projectCap').fadeIn();
-//     }, function () {
-//         // out
-//         $('.projectCap').stop();
-
-//     }
-// );
+$('.projectInfoBtn').click(function (e) { 
+    // alert();
+    $(this).toggleClass('btnFilled');
+});
 
 $('#navButtonToTerminal').click(function (e) { 
     e.preventDefault();

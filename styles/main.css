@@ -5,6 +5,12 @@ body {
     
     color: black;
 }
+
+:root {
+    --themeGreen: rgb(25,255,25);
+}
+
+
 .vcenter {
     display: flex;
     align-items: center;
@@ -13,7 +19,7 @@ body {
     max-width: 1200px !important;
 }
 .separator {
-    border-bottom: 1px solid rgb(25, 255, 25);
+    border-bottom: 1px solid var(--themeGreen);
     margin: 1vmin 0 1vmin 0;
 }
 .bg-test {
@@ -178,7 +184,7 @@ body {
 
 /* #region ABOUT ME PANEL */
 #aboutMePanel {
-    background-color: rgb(8, 8, 8);
+    /* background-color: rgb(8, 8, 8); */
     color: white;
 }
 
@@ -195,34 +201,13 @@ body {
 /* #endregion */
  
 
-/* #region FOOTER / CONTACT */
-#contact {
-    height: 100%;
-}
-footer {
-    height: 20vh;
-    
-}
-.signature {
-    font-size: 10px;
-    text-align: center;
-    color: rgb(114, 114, 114);
-  }
-  .signature p{
-    margin: 0;
-  }
-  .signature a{
-    color: rgb(114, 114, 114);
 
-  }
-  .signature a:hover{
-    color: rgb(94, 94, 94);
-  }
-
-/* #endregion */
 
 .midPanel {
-    background-color: rgb(8, 8, 8);
+    /* background-color: rgb(8, 8, 8); */
+    background-image: url(../img/twinkle.png);
+    
+    /* background: linear-gradient(114.05035649829483deg, rgba(3, 1, 13,1) 30.245441755124453%,rgba(3, 1, 13,1) 31.316803261499516%,rgba(0, 0, 0,1) 76.99576203330892%); */
     padding: 5vh 0 5vh 0;
 }
 
@@ -294,15 +279,23 @@ footer {
 
 .projectInfoBtn {
     height: 3vh;
-    border-bottom: 1px solid rgb(25, 255, 25);
-    border-radius: 10%;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    /* border-bottom: 1px solid rgb(25, 255, 25); */
+    /* border-radius: 10%; */
 }
-.dirArrow {
-    font-size: 0.8em;
+
+.projectInfoBtn_border {
+    width: 20%;
+    border: 1px solid var(--themeGreen);
 }
+
 .projectInfo {
     color: white;
-    font-size: 3vmin;
+    background-color: rgb(8, 8, 8);
+    /* font-size: 3vmin; */
+    font-size: 16px;
+
 }
 .statusReady {
     color: green;
@@ -315,14 +308,14 @@ footer {
 }
 .projectInfoBtn:hover { 
     cursor: pointer; 
-    border-color: rgb(25, 255, 25);
-    border-radius: 70%;
-    transition: border-color 0.5s, border-radius 1s;
 }
-.projectInfoBtn:hover .dirArrow {
-    color: rgb(25, 255, 25);
-    font-size: 1em;
-    transition: color 0.5s, font-size 0.5s;
+.btnFilled {
+    background-color: var(--themeGreen);
+    transition: background-color 1s;
+}
+.projectInfoBtn:hover .projectInfoBtn_border {
+    width: 100%;
+    transition: width .5s;
 }
 
 /* #endregion */
@@ -332,6 +325,7 @@ footer {
 .langs {
     padding-left: 10vmin;
     padding-right: 10vmin;
+    background-image: url(../img/twinkle.png);
 }
 .lang-bg {
     background-color:rgba(25, 255, 25, 0);
@@ -348,5 +342,40 @@ footer {
     align-items: center;
     margin-bottom: 2vh;
 }
+
+/* #endregion */
+
+
+
+
+
+
+
+/* #region FOOTER / CONTACT */
+#contact {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0);
+}
+footer {
+    height: 20vh;
+    background-image: url(../img/twinkle.png);
+    
+}
+.signature {
+    font-size: 10px;
+    text-align: center;
+    color: rgb(114, 114, 114);
+  }
+  .signature p{
+    margin: 0;
+  }
+  .signature a{
+    color: rgb(114, 114, 114);
+
+  }
+  .signature a:hover{
+    color: rgb(94, 94, 94);
+  }
 
 /* #endregion */
