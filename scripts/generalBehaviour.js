@@ -19,8 +19,20 @@ $(document).ready(function () {
 });
 /* #endregion ########################################### */
 
+
+
+/* #region ################# NAV PANEL SCROLLING ################# */
+
+$('.navTile').click(function (e) { 
+    let target = $(this).attr('scroll-target');
+    $.scrollTo($(target), {duration: 500});
+
+});
+
+/* #endregion ########################################### */
+
+
 $('.projectInfoBtn').click(function (e) { 
-    // alert();
     $(this).toggleClass('btnFilled');
 });
 

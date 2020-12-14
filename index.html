@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
@@ -85,7 +85,7 @@
                     <!--#region #################### GUI NAV ####################-->
 
                     <div id="navPanel" class="flex-wrap d-none">
-                        <div class="navTile">
+                        <div class="navTile" scroll-target="#contact">
                             <div class="iconHolder">
                                 <i class="flaticon-contact navItem"></i>
                             </div>
@@ -93,7 +93,7 @@
                                 <p>Contact</p>
                             </div>
                         </div>
-                        <div class="navTile">
+                        <div class="navTile" scroll-target="#skillset">
                             <div class="iconHolder">
                                 <i class="flaticon-pencil navItem"></i>
                             </div>
@@ -101,7 +101,7 @@
                                 <p>Skillset</p>
                             </div>
                         </div>
-                        <div class="navTile">
+                        <div class="navTile" scroll-target="#projects">
                             <div class="iconHolder">
                                 <i class="flaticon-laptop navItem"></i>
                             </div>
@@ -119,7 +119,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="navTile">
+                        <div class="navTile" scroll-target="#goals">
                             <div class="iconHolder">
                                 <i class="flaticon-mission navItem"></i>
                             </div>
@@ -145,24 +145,22 @@
                 <div id="aboutMePanel" class="my-4 py-4">
                     <h1>About Me</h1>
                     <div class="separator w-25 mx-auto"></div>
-                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Praesent lacus justo, euismod sit amet diam ut, varius faucibus diam.</p>
-                    <p>In accumsan tellus et imperdiet hendrerit. Aliquam consectetur suscipit urna id iaculis.</p>
-                    <p>Vivamus arcu sapien, luctus id orci et, semper bibendum enim.</p>
-                    <p>Fusce eleifend lorem et est molestie egestas vitae sed augue.</p> -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent lacus justo, euismod sit amet diam ut, varius faucibus diam.
-                    In accumsan tellus et imperdiet hendrerit. Aliquam consectetur suscipit urna id iaculis.
-                    Vivamus arcu sapien, luctus id orci et, semper bibendum enim.
-                    Fusce eleifend lorem et est molestie egestas vitae sed augue.</p>
+                    <p>Hello! My name is Michał, I'm 26 years old, living in Kraków. 
+                        Currently on start of my IT career, however my skillset is progressing rapidly. 
+                        I have started programming on my first year of college, since then I've made many different 
+                        types applications including desktop, android, games. Recently, web development is under my 
+                        interestment and this website is the result of it. I work on my projects daily and keep the 
+                        Project section up to date. If my skillset is what you're looking for, feel free to contact 
+                        me any time. Hope to hear from you soon, because I can't wait to start my professional development. :)
+                    </p>
                 </div>  
             </div>
 
 
         </div>
     </div>
-    <div class="container-fluid midPanel">
-        <div class="row mx-auto max-w-1200">
+    <div id="projects" class="container-fluid midPanel">
+        <div class="row mx-auto max-w-1200 justify-content-md-center">
             <div class="col-12 projectsTitle">
                 <h1>Projects</h1>
                 <div class="separator w-25 mx-auto"></div>
@@ -265,15 +263,22 @@
 
 
 
-    <div class="container-fluid langs bg-test2">
+    <div id="skillset" class="container-fluid langs bg-test2 pb-4">
         <div class="row mx-auto mt-0 max-w-1200 text-white">
             <div class="col-12 mt-4">
                 <h1>Knowledge</h1>
                 <div class="separator w-25 mx-auto"></div>
             </div>
+
+            <div class="col-12 mb-4">
+                <div class="sectionDescription mx-auto">
+                    <p>These are technologies I use on an everyday basis.</p>
+                </div>
+            </div>
         </div>
 
-        <div class="row mx-auto mt-0 max-w-1200 text-white">
+
+        <div class="row mx-auto mt-0 max-w-1200 text-white justify-content-md-center">
             <div class="col-lg-2 col-4">
                 <div class="logoHolder lang-bg">
                     <img src="img/logo_js_white.png" class="img-fluid" alt="">
@@ -305,33 +310,45 @@
                 </div>
             </div>
 
-            <div class="col-12 mt-4">
-                <p style="font-size: 1.4em;">I'm also familiar with</p>
+            <div class="col-12 mt-4 text-center">
+                <h2 style="font-size: 1.4em;">Also familiar with</h2>
                 <div class="separator w-25 mx-auto"></div>
             </div>
+            <div class="col-12 mb-4">
+                <div class="sectionDescription mx-auto">
+                    <p>The technologies I use once in a while. Currently not a primary objective.</p>
+                </div>
+            </div>
 
-            <div class="col-4 col-md-2 bg-test2">
-                <div class="logoHolder-minor lang-bg">
+            <div class="col-4 col-md-2">
+                <div class="logoHolder lang-bg">
                     <img src="img/logo_csharp.png" class="img-fluid" alt="">
                 </div>
             </div>
 
             <div class="col-4 col-md-2">
-                <div class="logoHolder-minor lang-bg">
+                <div class="logoHolder lang-bg">
                     <img src="img/logo_java.png" class="img-fluid" alt="">
                 </div>
             </div>
 
             <div class="col-4 col-md-2">
-                <div class="logoHolder-minor lang-bg">
-                    <img src="img/logo_jquery_white.png" class="img-fluid" alt="">
+                <div class="logoHolder lang-bg">
+                    <img src="img/logo_kotlin.png" class="img-fluid" alt="">
                 </div>
             </div>
 
-            <div class="row mx-auto mt-0 max-w-1200 text-white">
+
+            <div class="row mx-auto my-4 max-w-1200 text-white justify-content-md-center">
                 <div class="col-12 mt-4">
-                    <h1>Tools</h1>
+                    <h1>Tools I Use</h1>
                     <div class="separator w-25 mx-auto"></div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="sectionDescription mx-auto">
+                        <p>The tools I use on an everyday basis</p>
+                    </div>
                 </div>
 
 
@@ -347,42 +364,55 @@
                     </div>
                 </div>
 
+                <div class="col-lg-2 col-4">
+                    <div class="logoHolder lang-bg">
+                        <img src="img/logo_git.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
             </div>
 
             
         </div>
 
-        <div class="row mx-auto mt-4 max-w-1200 text-white text-center">
+        
+
+
+        <div id="goals" class="row mx-auto mt-4 max-w-1200 text-white justify-content-md-center">
             <div class="col-12 mt-4">
-                <p style="font-size: 1.4em;">I'm also familiar with</p>
+                <h1>Current Objectives</h1>
                 <div class="separator w-25 mx-auto"></div>
             </div>
 
-            <div class="col-4 col-md-2 bg-test2">
-                <div class="logoHolder-minor lang-bg">
-                    <img src="img/logo_csharp.png" class="img-fluid" alt="">
+            <div class="col-12 mb-4">
+                <div class="sectionDescription mx-auto">
+                    <p>These are technologies I either aleready started to learn or
+                        plan to do so in the nearest future.
+                    </p>
                 </div>
             </div>
 
             <div class="col-4 col-md-2">
                 <div class="logoHolder-minor lang-bg">
-                    <img src="img/logo_java.png" class="img-fluid" alt="">
+                    <img src="img/logo_netcore.png" class="img-fluid" alt="">
                 </div>
             </div>
 
             <div class="col-4 col-md-2">
                 <div class="logoHolder-minor lang-bg">
-                    <img src="img/logo_jquery_white.png" class="img-fluid" alt="">
+                    <img src="img/logo_react.png" class="img-fluid" alt="">
                 </div>
             </div>
-            
-        </div>
 
-
-        <div class="row mx-auto mt-4 max-w-1200 text-white">
-            <div class="col-12 mt-4">
-                <h1>My Goals</h1>
-                <div class="separator w-25 mx-auto"></div>
+            <div class="col-4 col-md-2">
+                <div class="logoHolder-minor lang-bg">
+                    <img src="img/logo_php.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="logoHolder-minor lang-bg">
+                    <img src="img/logo_mysql.png" class="img-fluid" alt="">
+                </div>
             </div>
         </div>
         
@@ -390,20 +420,22 @@
 
 
     <footer>
-        <div id="contact" class="container-fluid bg-test2">
-            <div class="row text-white">
+        <div id="contact" class="container-fluid bg-test">
+            <div class="row text-white pb-2">
                 <div class="col-12 mt-4">
                     <h1>Contact</h1>
                     <div class="separator w-25 mx-auto"></div>
                 </div>
-                <div class="col-6 text-center">asdas</div>
-                <div class="col-6 text-center">asdas</div>
+                <div class="col-12 text-center"><a href="tel:665683665"><i class="flaticon-phone"></i></a>665 683 665</div>
+                <div class="col-12 text-center"><a href="mailto:michalpilch94@hotmail.com"><i class="flaticon-email"></i></a></i>michalpilch94@hotmail.com</div>
             </div>
         </div>
+
+        <div class="signature">
+            <p>&copy; Copyright Michał Pilch 2020 | <a href="licences/licences.html" target="_blank">Licences</a></p>
+        </div>
     </footer>
-    <div class="signature">
-        <p>&copy; Copyright Michał Pilch 2020 | <a href="licences/licenses.html" target="_blank">Licences</a></p>
-    </div>
+    
     <!--### jQuery ###-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--### bootstrap files ###-->

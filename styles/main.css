@@ -10,6 +10,13 @@ body {
     --themeGreen: rgb(25,255,25);
 }
 
+.sectionDescription {
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.05;
+    color: var(--themeGreen);
+}
 
 .vcenter {
     display: flex;
@@ -189,14 +196,14 @@ body {
 }
 
 #aboutMePanel p {
-    text-align: justify;
+    text-align: left;
     margin: 0 10vw 0 10vw;
     /* font-size: 3vmin; */
-    font-size: 1rem;
+    font-size: 18px;
 }
 #aboutMePanel h1 {
     text-align: center;
-    font-size: 5vmin;
+    font-size: 24px;
 }
 /* #endregion */
  
@@ -214,7 +221,7 @@ body {
 /* #region PROJECTS */
 .col-12 h1 {
     color: white;
-    font-size: 5vmin;
+    font-size: 24px;
     text-align: center;
 }
 .projectTile {
@@ -349,10 +356,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2vh;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* #endregion */
 
@@ -364,15 +371,31 @@ body {
 
 /* #region FOOTER / CONTACT */
 #contact {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(8, 8, 8, 0);
+    
+    background-color: rgb(22, 22, 22);
 }
 footer {
     height: 20vh;
-    background-image: url(../img/twinkle.png);
-    
+    font-size: 16px;
 }
+#contact i::before {
+    margin: 1vw;
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+}
+.contact-bg {
+    opacity: 1;
+    background-image: url('../img/bg_network.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#contact a:hover {
+    color: inherit;
+    text-transform: none;
+    text-decoration: none;
+}
+
 .signature {
     font-size: 10px;
     text-align: center;
