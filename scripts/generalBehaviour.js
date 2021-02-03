@@ -20,11 +20,12 @@ const sidebarScrollPos = 350; // the amount of pixels to be hidden in order to h
 /* #region ################# RESIZE ################# */
 $(window).resize(function () { 
     let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
     if(window.innerHeight < 500) {
-        $('#terminal-container').css('height', '70%');
+        $('#terminal-container').css('height', '50%');
         $('#terminal-container').css('margin-top', '0');
-        $('#terminal-container').css('width', '90%');
+        $('#terminal-container').css('width', '80%');
     } else {
         $('#terminal-container').css('height', '100%');
         $('#terminal-container').css('margin-top', '20vh');
@@ -51,9 +52,9 @@ $(window).scroll(function () {
 /* #region ################# ON LOAD ################# */
 $(document).ready(function () {
     if(window.innerHeight < 500) {
-        $('#terminal-container').css('height', '70%');
+        $('#terminal-container').css('height', '50%');
         $('#terminal-container').css('margin-top', '0');
-        $('#terminal-container').css('width', '90%');
+        $('#terminal-container').css('width', '80%');
     } else {
         $('#terminal-container').css('height', '100%');
         $('#terminal-container').css('margin-top', '20vh');
