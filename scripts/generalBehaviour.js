@@ -1,21 +1,46 @@
+const sidebarScrollPos = 350; // the amount of pixels to be hidden in order to hide sidebar
+
 /* #region ################# RESIZE ################# */
 $(window).resize(function () { 
-    if(window.innerWidth < 992) {
-        $('.topPanel').css('height', 'auto');
+    if(window.innerHeight < 500) {
+        $('#terminal-container').css('height', '70%');
+        $('#terminal-container').css('margin-top', '0');
+        $('#terminal-container').css('width', '90%');
     } else {
-        $('.topPanel').css('height', '100vh');
+        $('#terminal-container').css('height', '100%');
+        $('#terminal-container').css('margin-top', '20vh');
+        $('#terminal-container').css('width', '100%');
     }
 });
 /* #endregion ########################################### */
 
+/* #region ################# SIDENAV HIDE/SHOW ################# */
+
+$(window).scroll(function () { 
+    let scrollPos = $(window).scrollTop();;
+    if (scrollPos > sidebarScrollPos) {
+        $('.sidenav').addClass('sidenav-short');
+        $('.side-navTile').addClass('.side-navTile-short');
+    } else {
+        $('.sidenav').removeClass('sidenav-short');
+        $('.side-navTile').removeClass('.side-navTile-short');
+    }
+});
+    
+/* #endregion ########################################### */
 
 /* #region ################# ON LOAD ################# */
 $(document).ready(function () {
-    if(window.innerWidth < 992) {
-        $('.topPanel').css('height', 'auto');
+    if(window.innerHeight < 500) {
+        $('#terminal-container').css('height', '70%');
+        $('#terminal-container').css('margin-top', '0');
+        $('#terminal-container').css('width', '90%');
     } else {
-        $('.topPanel').css('height', '100vh');
+        $('#terminal-container').css('height', '100%');
+        $('#terminal-container').css('margin-top', '20vh');
+        $('#terminal-container').css('width', '100%');
     }
+    adjustFontSize();
 });
 /* #endregion ########################################### */
 
@@ -23,9 +48,14 @@ $(document).ready(function () {
 
 /* #region ################# NAV PANEL SCROLLING ################# */
 
-$('.navTile').click(function (e) { 
+$('.side-navTile').click(function (e) { 
     let target = $(this).attr('scroll-target');
-    $.scrollTo($(target), {duration: 500});
+    if (target == 'top') {
+        $.scrollTo(0, {duration: 500});
+    } else {
+        $.scrollTo($(target), {duration: 500});
+    }
+    
 
 });
 

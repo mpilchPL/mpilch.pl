@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/terminal.css">
     <link rel="stylesheet" href="img/icons/font/flaticon.css">
 
-    <link rel="stylesheet" href="fontello-523febff/css/fontello.css">
+    <!-- <link rel="stylesheet" href="fontello-523febff/css/fontello.css"> -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
@@ -22,25 +22,10 @@
 
     <div class="container-fluid backImg">
         <div class="row mx-sm-auto max-w-1200 topPanel">
-            <div class="col-lg-6 p-0 ratio-golden">
-                <div id="welcomeHeader" class="mr-lg-2 headerTile">
-                    <div style="height: 100%; width: 100%; padding: 2vw;">
-                        <p class="fitFont" size="5">Hi, I'm</p>
-                        <h1>Michał Pilch</h1>
-                        <p style="text-align: center;">and I aspire to be</p>
-                        <p style="text-align: right; font-size: 1.6em;">Web Developer</p>
-                    </div>
-                    <div class="squares pos-bottomleft">
-                        <div class="insideSQ"></div>
-                        <div class="SQred"></div>
-                        <div class="SQblue"></div>
-                        <div class="SQgreen"></div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6 p-0 ratio-golden">
-                <div id="navigation" class="ml-lg-2 headerTile">
+            <div class="col-lg-6 p-0 ratio-golden offset-lg-3">
+                <div id="terminal-container" class="">
+                    
                     <!--#region #################### TERMINAL ####################### -->
                     <div id="term_terminal" class="">
                         <div id="term_topBar">
@@ -48,7 +33,7 @@
                                 <div id="term_fileButton" class="term_menuItem">File</div>
                                 <div id="term_fileMenu" class="term_dropdownMenu term_hidden">
                                     <div id="clearBTN" class="term_dropdownMenu_item">Clear</div>
-                                    <div id="guiBTN" class="term_dropdownMenu_item">GUI</div>
+                                    <!-- <div id="guiBTN" class="term_dropdownMenu_item">GUI</div> -->
                                 </div>
                             </div>
                             <div class="term_dropdown term_buttonHover">
@@ -81,86 +66,104 @@
                         <div class="term_androidArrows term_arrowBottom term_hidden">&darr;</div>
                     </div>
                     <!--#endregion #####################################################-->
-                    
-                    <!--#region #################### GUI NAV ####################-->
+                </div>
+                
+            </div>
 
-                    <div id="navPanel" class="flex-wrap d-none">
-                        <div class="navTile" scroll-target="#contact">
-                            <div class="iconHolder">
-                                <i class="flaticon-contact navItem"></i>
-                            </div>
-                            <div class="cap">
-                                <p>Contact</p>
-                            </div>
-                        </div>
-                        <div class="navTile" scroll-target="#skillset">
-                            <div class="iconHolder">
-                                <i class="flaticon-pencil navItem"></i>
-                            </div>
-                            <div class="cap">
-                                <p>Skillset</p>
-                            </div>
-                        </div>
-                        <div class="navTile" scroll-target="#projects">
-                            <div class="iconHolder">
-                                <i class="flaticon-laptop navItem"></i>
-                            </div>
-                            <div class="cap">
-                                <p>Projects</p>
-                            </div>
-                        </div>
-                        <div class="navTile">
-                            <a href="https://github.com/mpilchPL" target="_blank">
-                                <div class="iconHolder">
-                                    <i class="flaticon-github navItem"></i>
-                                </div>
-                                <div class="cap">
-                                    <p>GitHub</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="navTile" scroll-target="#goals">
-                            <div class="iconHolder">
-                                <i class="flaticon-mission navItem"></i>
-                            </div>
-                            <div class="cap">
-                                <p>Goals</p>
-                            </div>
-                        </div>
-                        <div id="navButtonToTerminal" class="navTile">
-                            <div class="iconHolder">
-                                <i class="flaticon-web-programming navItem"></i>
-                            </div>
-                            <div class="cap">
-                                <p>Terminal</p>
-                            </div>
+            <!-- <div class="col-lg-10 offset-1 p-0 ">
+                <div id="welcomeHeader" class="mr-lg-2 headerTile">
+                    <div style="height: 100%; width: 100%; padding: 2vw;">
+                        <p class="fitFont" size="5">Hi, I'm</p>
+                        <h1>Michał Pilch</h1>
+                        <p style="text-align: center;">and I aspire to be</p>
+                        <p style="text-align: right; font-size: 1.6em;">Web Developer</p>
+                    </div>
+                    <div class="squares pos-bottomleft">
+                        <div class="insideSQ"></div>
+                        <div class="SQred"></div>
+                        <div class="SQblue"></div>
+                        <div class="SQgreen"></div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div id="buttonABTME">About me</div>
+
+
+            <!--#region #################### SIDENAV #################### -->
+            <div class="sidenav">
+                <div class="side-navTile" scroll-target="top">
+                    <div class="sidenav-icon">
+                        <div class="mp">
+                            MP
                         </div>
                     </div>
-
-                    <!--#endregion ############################################ -->
                 </div>
+
+                <div class="side-navTile" scroll-target="#projects">
+                    <div class="sidenav-icon">
+                        <i class="flaticon-laptop"></i>
+                    </div>
+                    <div class="caption">
+                        projects
+                    </div>
+                </div>
+
+                <div class="side-navTile" scroll-target="#skillset">
+                    <div class="sidenav-icon">
+                        <i class="flaticon-pencil"></i>
+                    </div>
+                    <div class="caption">skillset</div>
+                </div>
+
+                <div class="side-navTile" scroll-target="#goals">
+                    <div class="sidenav-icon">
+                        <i class="flaticon-mission"></i>
+                    </div>
+                    <div class="caption">goals</div>
+                </div>
+
+                <div class="side-navTile" scroll-target="#contact">
+                    <div class="sidenav-icon">
+                        <i class="flaticon-contact"></i>
+                    </div>
+                    <div class="caption">contact</div>
+                </div>
+
+                <div class="separator"></div> 
+
+                <a href="https://github.com/mpilchPL" target="_blank">
+                    <div class="side-navTile">
+                        <div class="sidenav-icon">
+                            <i class="flaticon-github"></i>
+                        </div>
+                        <div class="caption">mpilchPL</div>
+                    </div>
+                </a>
             </div>
-
-            <div class="col-12 p-0">
-                <div id="aboutMePanel" class="my-4 py-4">
-                    <h1>About Me</h1>
-                    <div class="separator w-25 mx-auto"></div>
-                    <p>Hello! My name is Michał, I'm 26 years old, living in Kraków. 
-                        Currently on start of my IT career, however my skillset is progressing rapidly. 
-                        I have started programming on my first year of college, since then I've made many different 
-                        types applications including desktop, android, games. Recently, web development is under my 
-                        interestment and this website is the result of it. I work on my projects daily and keep the 
-                        Project section up to date. If my skillset is what you're looking for, feel free to contact 
-                        me any time. Hope to hear from you soon, because I can't wait to start my professional development. :)
-                    </p>
-                </div>  
-            </div>
-
-
+            <!--#endregion ############################################ -->
         </div>
     </div>
-    <div id="projects" class="container-fluid midPanel">
-        <div class="row mx-auto max-w-1200 justify-content-md-center">
+
+
+    <div class="container-fluid midPanel">
+        <div class="col-12 p-0">
+            <div id="aboutMePanel" class="my-4 py-4">
+                <h1>About Me</h1>
+                <div class="separator w-25 mx-auto"></div>
+                <p>Hello! My name is Michał, I'm 26 years old, living in Kraków. 
+                    Currently on start of my IT career, however my skillset is progressing rapidly. 
+                    I have started programming on my first year of college, since then I've made many different 
+                    types applications including desktop, android, games. Recently, web development is under my 
+                    interestment and this website is the result of it. I work on my projects daily and keep the 
+                    Project section up to date. If my skillset is what you're looking for, feel free to contact 
+                    me any time. Hope to hear from you soon, because I can't wait to start my professional development.
+                </p>
+            </div>  
+        </div>
+        
+        <div id="projects" class="row mx-auto max-w-1200 justify-content-md-center">
             <div class="col-12 projectsTitle">
                 <h1>Projects</h1>
                 <div class="separator w-25 mx-auto"></div>

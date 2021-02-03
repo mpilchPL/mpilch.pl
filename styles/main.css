@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 body {
     padding: 0;
     margin: 0;
@@ -37,72 +40,31 @@ body {
     background-color: rgba(0, 0, 0, 0.719);
 }
 
-.headerTile {
-    margin-top: 1vw;
+#terminal-container {
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 90%;
     box-shadow: 1vw 1vw 2vw black;
-    font-size: 5vmin;
 }
 
-#navigation {
-    height: 100%;
-}
-#welcomeHeader {
-    position: relative;
-    background-color: rgba(20, 20, 20, 0.37);
-    color: lavender;
-    height: 100%;
+#buttonABTME {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px !important;
+    bottom: 0   ;
+    width: 200px;
+    height: 50px;
+    font-size: 1.4em;
+    line-height: 50px;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid white;
+    color: white;
 }
 
-#welcomeHeader p {
-    padding: 0;
-    margin: 0;
-} 
-#welcomeHeader h1 {
-    font-size: 2.4em;
-}   
-.squares {
-    position: absolute;
-    width: 30%;
-    height: 40%;
-}
-.insideSQ {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.SQred {
-    position: absolute;
-    width: 66%;
-    height: 66%;
-    background-color: rgba(255, 0, 0, 0.25);
-    left: 0;
-    top: 0;
-    z-index: 1;
-    margin-left: 0.5vw;
-}
-.SQblue {
-    position: absolute;
-    background-color: rgba(0, 0, 255, 0.25);
-    width: 66%;
-    height: 66%;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    margin-right: 0.5vw;
-    margin-bottom: 0.5vw;
-}
-.SQgreen {
-    position: absolute;
-    background-color: rgba(0, 128, 0, 0.25);
-    width: 33%;
-    height: 33%;
-    left: 20%;
-    bottom: 20%;
-    z-index: 1;
-}
-
-.pos-topright {
+/* .pos-topright {
     right: 0;
     top: 0;
 }
@@ -110,7 +72,7 @@ body {
 .pos-bottomleft {
     left: 0;
     bottom: 0;
-}
+} */
 
 .backImg {
     background-image: url('../img/bg2.jpg');
@@ -122,6 +84,7 @@ body {
 
 .topPanel {
     height: 100vh;
+    position: relative;
 }
 
 
@@ -215,7 +178,7 @@ body {
     background-image: url(../img/twinkle.png);
     
     /* background: linear-gradient(114.05035649829483deg, rgba(3, 1, 13,1) 30.245441755124453%,rgba(3, 1, 13,1) 31.316803261499516%,rgba(0, 0, 0,1) 76.99576203330892%); */
-    padding: 5vh 0 5vh 0;
+    padding: 5vh 0;
 }
 
 /* #region PROJECTS */
@@ -249,13 +212,8 @@ body {
     background-color: #0000007e;
     color: white;
     text-align: center;
-    font-size: 4vmin;
-    /* padding-top: 30%; */
+    font-size: 1.5rem;
     z-index: 1;
-    /* top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
 }
 
 .centerContent {
@@ -364,18 +322,13 @@ body {
 /* #endregion */
 
 
-
-
-
-
-
 /* #region FOOTER / CONTACT */
 #contact {
-    
+    padding-bottom: 20px;
     background-color: rgb(22, 22, 22);
 }
 footer {
-    height: 20vh;
+    /* height: 20vh; */
     font-size: 16px;
 }
 #contact i::before {
@@ -411,5 +364,97 @@ footer {
   .signature a:hover{
     color: rgb(94, 94, 94);
   }
+
+/* #endregion */
+
+/* #region SIDENAV */
+
+
+
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 69px;
+    font-size: 16px;
+    background-color: rgba(70, 70, 70, 0.452);
+    z-index: 1;
+    transition: 
+        font-size .6s,
+        height .6s ease-out,
+        width .6s ease-out;
+}
+
+.sidenav-short {
+    /* height: 40vh !important; */
+    border-bottom-right-radius: 5px;
+    width: 50px;
+    font-size: 13px;
+
+    transition: 
+        font-size .6s,
+        /* height .6s ease-out, */
+        width .6s ease-out;
+}
+
+.sidenav .caption {
+    text-align: center;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin: 0 4px;
+}
+
+.mp {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.sidenav-icon {
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.sidenav-icon i::before {
+    font-size: 2.2em;
+    margin: 0;  
+}
+
+.side-navTile {
+    width: 100%;
+    max-height: 69px;  
+    /* border: 2px solid white; */
+    color: lavender;
+    margin: 6px 0;
+}
+
+
+.side-navTile:hover {
+    background-color: rgba(20, 20, 20, 0);
+    color: rgb(25, 255, 25);
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+.sidenav .separator {
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 2px solid var(--themeGreen);
+}
+
+.side-navTile a {
+    transform: none;
+    color: lavender;
+}
+.sidenav a:hover {
+    transform: none;
+    background-color: rgba(20, 20, 20, 0.219);
+    color: rgb(25, 255, 25);
+    cursor: pointer;
+    transition: color 0.4s;
+    text-decoration: none;
+}
 
 /* #endregion */
