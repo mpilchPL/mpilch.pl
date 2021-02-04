@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #444444;
-    z-index: -1;
+    /* z-index: -1; */
     color: black;
 }
 
@@ -397,6 +397,41 @@ footer {
         font-size .6s,
         /* height .6s ease-out, */
         width .6s ease-out;
+}
+
+/* ### SIDENAV MOBILE ### */
+
+@media screen and (max-width: 992px) {
+    .sidenav {
+        position: fixed;
+        display: flex;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        font-size: 13px;
+        background-color: rgba(70, 70, 70, 0.452);
+        z-index: 5;
+    }
+    
+    .sidenav-short {
+        /* ### leave empty ### */
+    }
+
+    .sidenav-icon {
+        flex: fill;
+        height: auto;
+        width: auto;
+        text-align: center; 
+        margin: 0 5px;
+    }
+
+    .sidenav .separator {
+        display: none;
+    }
+    .sidenav .caption {
+        display: none;
+    }
 }
 
 .sidenav .caption {
