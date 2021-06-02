@@ -1,5 +1,5 @@
 let commands = new Array(); // Array with all available commands
-const SCROLL_TARGETS = ['test1', 'test2', 'test3', 'test4'];  //TODO uzupelniac na biezaco
+const SCROLL_TARGETS = ['projects', 'skillset', 'goals', 'contact'];  //TODO uzupelniac na biezaco
 const ABOUT_ME = [
     'This is about me text,', 
     'each values of this array represents 1 line,',
@@ -30,9 +30,12 @@ function handleCommand(terminal, command, line, param) {
 
     if(paramsFiltered.length > 0) {
         currentCommand.execute(terminal, command, line, paramsFiltered);
+        console.log('terminal command: ' + paramsFiltered);
     } else {
         currentCommand.execute(terminal, command, line);
-    }
+        console.log('terminal command: no params');
+        //TODO dowiedziec sie czemu goto nie podaje parametru
+    }   
     return;
 }
 
@@ -171,12 +174,24 @@ commands.push(typewrite = {
 commands.push(goto = {
     name: 'goto',
     info: 'Scrolls website to the target',
-    params: ['help'],
+    params: ['help'].concat(SCROLL_TARGETS),
     values: SCROLL_TARGETS,
     showInfo(terminal) {
         commandInfo(terminal, this.name, this.info, this.params, this.values);
     },
     execute(terminal, command, line, p) {
+        if(line.split(" ").length > 1) { // command has a value
+            // let target = `#${p[0]}`;
+            console.log(p);
+            return;
+        } else {                            // command has no value
+            terminal.println('Command ' + this.name + ' requires value.');
+            terminal.println(`Available values for command '${this.name}': ${this.values}`);
+        }
+
+
+        // let target = $(this).attr('scroll-target');
+        // $.scrollTo($(target), {duration: 500});
         
     }
 });

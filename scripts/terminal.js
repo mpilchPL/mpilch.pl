@@ -6,9 +6,11 @@ const maxRows = 15;                // MAX NUMBER OF DISPLAYED ROWS
 const keyCode = 13;
 const commandPrompt = ">> ";
 var welcomeText =  new Array(  // this text is typewrited on page load
-    "Welcome to the site.",
-    "You can use this terminal to navigate the site, learn about the author and more.",
-    "Type 'cmd' or 'commands' to get the list of availabe commands."
+    "Hi, I'm Michał.",
+    "This is my portfolio website. A place where you can find information about me, my skills and obviously my projects.",
+    "I encourage you to explore the website and I hope to hear from you soon.",
+    "",
+    "Type 'cmd' to get the list of availabe commands."
     );
 var terminal = new Terminal(o, i);  //CREATE TERMINAL INSTANCE
 
@@ -152,6 +154,11 @@ function hideAllDropdowns() {
      e.preventDefault();
      showGui();
  });
+
+ $('#howToBTN').click(function (e) { 
+    e.preventDefault();
+    handleCommand(terminal, "howto", "howto", []);
+});
 
 $(window).click(function (e) { 
      if(!e.target.closest(".term_dropdown")) {

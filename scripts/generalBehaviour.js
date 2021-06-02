@@ -80,7 +80,10 @@ $('.side-navTile').click(function (e) {
 });
 
 /* #endregion ########################################### */
-
+$('#buttonABTME').click(function (e) { 
+    e.preventDefault();
+    $.scrollTo($('.midPanel'), {duration: 500});
+});
 
 $('.projectInfoBtn').click(function (e) { 
     $(this).toggleClass('btnFilled');
@@ -92,7 +95,7 @@ $('#navButtonToTerminal').click(function (e) {
 });
 
 $('#term_exit').click(function (e) { 
-    showGui();
+    // showGui();
 });
 
 function showGui() { 
